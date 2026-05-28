@@ -1,1 +1,24 @@
 
+    inteiro matricula
+    real notafinal
+    cadeia conceito
+
+    para (inteiro i = 1; i<=75; i++){
+      escreva("\nNúmero de matrícula: ")
+      leia(matricula)
+      escreva("Nota final: ")
+      leia(notafinal)
+
+      se(notafinal>=0.0 e notafinal<=4.9){
+        conceito = "D"
+      }senao se(notafinal >= 5.0 e notafinal<=6.9){
+        conceito = "C"
+      }senao se(notafinal >= 7.0 e notafinal<=8.9){
+        conceito = "B"
+      }senao{
+        conceito = "A"
+      }
+
+      escreva("\nMatrícula: ",matricula,"\nNota final: ",notafinal,"\nConceito: ",conceito,"\n")
+    }
+
