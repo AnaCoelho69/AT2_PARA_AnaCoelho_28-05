@@ -1,1 +1,14 @@
+  
+    real chico = 1.50 , ze = 1.10
+    inteiro anos = 0
+
+    escreva("Chico tem 1,50m e cresce 2 centímetros por ano.\nZé tem 1,10m e cresce 3 centímetros por ano.")
+
+    enquanto(ze <= chico){
+      ze = ze + 0.02
+      chico = chico + 0.03
+      anos = anos + 1
+    }
+    escreva("\nLevarão ",anos," anos para Zé ser mais alto que Chico, onde Chico terá ",chico,"m e Zé terá ",ze,"m.")
+
 
