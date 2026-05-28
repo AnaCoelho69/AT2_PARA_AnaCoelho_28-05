@@ -1,1 +1,30 @@
+   
+    real salario,maiorsalario = 0,percentual = 0
+    inteiro filhos,mediasalario = 0,mediafilhos = 0
+    cadeia nome
+
+  para(inteiro i = 1; i<=5; i++){
+    escreva("\nNome do indivíduo: ")
+    leia(nome)
+    escreva("Salário: ")
+    leia(salario)
+    escreva("Número de filhos: ")
+    leia(filhos)
+
+    mediasalario = mediasalario + salario
+    mediafilhos = mediafilhos + filhos
+
+    se(salario > maiorsalario){
+      maiorsalario = salario
+    }se(salario <= 100){
+      percentual = percentual + 1
+    }
+  }
+
+  mediasalario = mediasalario/5
+  mediafilhos = mediafilhos/5
+  percentual = percentual/5 
+  percentual = percentual*100
+
+  escreva("\nA média salarial da população é de R$",mediasalario,", a média do número de filhos da população é de ",mediafilhos,",\no maior salário é de R$",maiorsalario," e o percentual de pessoas com o salário até R$100 é de ",percentual,"%.")
 
