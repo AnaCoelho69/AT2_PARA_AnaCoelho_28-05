@@ -1,1 +1,22 @@
 
+  cadeia sexo,olhos,cabelos
+  inteiro idade,maioridade = 0,individuos = 0
+
+  para (inteiro i = 1; i<=500; i++){
+      escreva("Informe:\nSexo --> M (masculino) ; F(feminino):\n")
+      leia(sexo)
+      escreva("Cor dos olhos --> A (azuis) ; V(verdes) ; C (castanhos):\n")
+      leia(olhos)
+      escreva("Cor dos cabelos --> L (louros) ; C (castanhos) ; P (pretos):\n")
+      leia(cabelos)
+      escreva("Idade : \n")
+      leia(idade)
+
+      se(idade > maioridade){
+        maioridade = idade
+      }se(sexo == "F" e idade >=18 e idade <=35 e olhos == "V" e cabelos == "L"){
+        individuos = individuos + 1
+      }
+
+  }
+    escreva("A maior idade do grupo é ",maioridade," e a quantidade de indivíduos específicos (sexo feminino, olhos verdes, cabElos louros e idade entre 18 e 35 anos) é ",individuos)
