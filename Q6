@@ -1,0 +1,18 @@
+inteiro valormaior=0,valormenor=0,valor
+
+    escreva("Digite um valor inteiro: ")
+    leia(valor)
+    valormaior = valor
+    valormenor=valor
+
+    para(inteiro i =2;i<=10;i++){
+      escreva("Digite um valor inteiro: ")
+      leia(valor)
+
+      se(valor>valormaior){
+        valormaior=valor
+      }senao se(valor<valormenor){
+        valormenor=valor
+      }
+    }
+    escreva("O maior valor digitado foi ",valormaior," e o menor valor digitado foi ",valormenor)
