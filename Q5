@@ -1,1 +1,42 @@
+  
+    inteiro votos1=0,votos2=0,votos3=0,votos4=0,brancos=0,nulos=0,votostotais=0,voto
+
+    para(inteiro i =0; i <= 20; i ++){
+      escreva("------ VOTAÇÃO INICIADA ------\n---Digite sua escolha: \n1 --- Willian B.\n2 --- Bolsonaro\n3 --- Lula\n4 --- Neymar\n5 --- nulo\n6 --- voto em branco\n0 --- encerrar votação\n")
+      leia(voto)
+
+      escolha(voto){
+        caso 1: 
+          escreva("Voto para Willan B. bem sucedido. Obrigado por votar\n")
+          votos1=votos1+1
+          pare
+        caso 2:
+          escreva("Voto para Bolsonaro bem sucedido. Obrigado por votar\n")
+          votos2=votos2+1
+          pare
+        caso 3:
+          escreva("Voto para Lula bem sucedido. Obrigado por votar\n")
+          votos3=votos3+1
+          pare
+        caso 4:
+          escreva("Voto para Neymar bem sucedido. Obrigado por votar\n")
+          votos4=votos4+1
+          pare
+        caso 5:
+          escreva("Voto nulo bem sucedido. Obrigado por votar\n")
+          nulos=nulos+1
+          pare
+        caso 6:
+          escreva("Voto em branco bem sucedido. Obrigado por votar\n")
+          brancos=brancos+1
+          pare
+        caso 0:
+          escreva("Votação encerrada.\n")
+          i = 21
+          pare
+      }
+    }
+    
+    votostotais = votos1+votos2+votos3+votos4+nulos+brancos
+    escreva("\n--- Votos totais: ",votostotais," ---\n-Candidato 1: ",votos1,"\n-Candidato 2: ",votos2,"\n-Candidato 3: ",votos3,"\n-Candidato 4: ",votos4,"\n-Nulos : ",nulos,"\n-Em branco: ",brancos)
 
