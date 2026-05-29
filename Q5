@@ -1,7 +1,7 @@
   
     inteiro votos1=0,votos2=0,votos3=0,votos4=0,brancos=0,nulos=0,votostotais=0,voto
 
-    para(inteiro i =0; i <= 20; i ++){
+    para(inteiro i =1; i <= 20; i ++){
       escreva("------ VOTAÇÃO INICIADA ------\n---Digite sua escolha: \n1 --- Willian B.\n2 --- Bolsonaro\n3 --- Lula\n4 --- Neymar\n5 --- nulo\n6 --- voto em branco\n0 --- encerrar votação\n")
       leia(voto)
 
